@@ -1,0 +1,50 @@
+html {
+font-family: 'Work Sans', sans-serif;
+Font-style: Medium;
+color: #1D1D1D;
+font-size:60px;
+line-height: 77px;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+a {
+text-decoration: none;
+color: #1D1d1d;
+}
+
+@media (max-width: 768px){
+html {
+font-size: 27px;
+}
+a {
+background-color: aqua;
+}
+}
+
+.info_conteyner {
+margin-top: 1em;
+padding-right: 1em;
+}
+
+.name_conteyner {
+margin-top: 1em;
+}
+
+.socials_conteyner {
+margin-top: 1em;
+}
+
+a:hover {
+/* text-decoration: underline ;
+color: red; */
+background-color: aqua;
+} 
+
+div{
+margin-left: 0.5em;
+box-sizing: border-box;
+}
