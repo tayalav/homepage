@@ -11,6 +11,11 @@ margin: 0;
 padding: 0;
 }
 
+body {
+background: url(./lines.svg) no-repeat;
+background-size: 100%;
+}
+
 a {
 text-decoration: none;
 color: #1D1d1d;
@@ -42,7 +47,7 @@ a:hover {
 /* text-decoration: underline ;
 color: red; */
 background-color: aqua;
-} 
+}
 
 div{
 margin-left: 0.5em;
