@@ -1,19 +1,19 @@
 html {
 font-family: 'Work Sans', sans-serif;
-Font-style: Medium;
+font-style: normal;
 color: #1D1D1D;
-font-size:60px;
-line-height: 77px;
+font-size:52px;
+line-height: normal;
+box-sizing: border-box;
 }
 
-* {
+
+
+* ,
+*:before,
+*:after {
 margin: 0;
 padding: 0;
-}
-
-body {
-background: url(./lines.svg) no-repeat;
-background-size: 100%;
 }
 
 a {
@@ -21,12 +21,26 @@ text-decoration: none;
 color: #1D1d1d;
 }
 
-@media (max-width: 768px){
+
+
+@media (max-width: 714px){
 html {
-font-size: 27px;
+font-size: 44px;
+line-height: normal;
 }
-a {
-background-color: aqua;
+}
+
+@media (max-width: 600px){
+html {
+font-size: 36px;
+line-height: normal;
+}
+}
+
+@media (max-width: 440px){
+html {
+font-size: 26px;
+line-height: normal;
 }
 }
 
@@ -36,7 +50,7 @@ padding-right: 1em;
 }
 
 .name_conteyner {
-margin-top: 1em;
+padding-top: 1em;
 }
 
 .socials_conteyner {
@@ -49,7 +63,13 @@ color: red; */
 background-color: aqua;
 }
 
-div{
+p{
 margin-left: 0.5em;
-box-sizing: border-box;
+}
+
+body {
+background: url("./lines_vertical.svg") no-repeat;
+background-size: 100%;
+background-position: cover;
+height: 100%;
 }
