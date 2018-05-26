@@ -85,6 +85,7 @@ p {
 
     a {
         text-decoration: underline;
+        -webkit-text-decoration-color: aqua;
         text-decoration-color: aqua;
     }
 }
