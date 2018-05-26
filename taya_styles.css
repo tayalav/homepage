@@ -1,99 +1,102 @@
 html {
-font-family: 'IBM Plex Sans', sans-serif;
-font-weight: 400;
-color: #1D1D1D;
-font-size: 40px;
-line-height: 40px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    color: #1D1D1D;
+    font-size: 40px;
+    line-height: 40px;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-* ,
+*,
 *:before,
 *:after {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-text-decoration: none;
-color: #1D1d1d;
+    text-decoration: none;
+    color: #1D1d1d;
 }
 
 body {
-background: url("./lines_vertical_old.svg") no-repeat;
-background-clip: border-box;
-background-size: 100%;
-height: 100%;
+    background: url("./lines_vertical_old.svg") no-repeat;
+    background-clip: border-box;
+    background-size: 100%;
+    height: 100%;
 }
 
-
-.name_conteyner {
-padding-top: 1em;
-width:50%;
+.name_container {
+    padding-top: 1em;
+    width: 50%;
 }
 
-
-
-.info_conteyner {
-margin-top: 1em;
-padding-right: 1em;
-width:50%;
+.info_container {
+    margin-top: 1em;
+    padding-right: 1em;
+    width: 50%;
 }
+
 /*
 .info_text{
 line-height: 72px;
 font-size: 48px;
 }
 */
-.socials_conteyner {
-margin-top: 1em;
-width:50%;
+.socials_container {
+    margin-top: 1em;
+    width: 50%;
 }
-
-
 
 a:hover {
-/* text-decoration: underline ;
-color: red; */
-background-color: aqua;
+    /* text-decoration: underline ;
+    color: red; */
+    background-color: aqua;
 }
 
-p{
-margin-left: 1em;
-margin-right: 1em;
+p {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-@media (max-width: 880px){
-body {
-background: url("./lines_vertical.svg") no-repeat;
-background-clip: border-box;
-background-size: auto auto;
-}
-.name_conteyner {
-width:100%;
-}
-.socials_conteyner {
-width:100%;
-}
-.info_conteyner {
-width:100%;
-}
-p{
-margin-left: 0.4em;
-}
-a {
-text-decoration: underline ;
-text-decoration-color: aqua;
-}
+@media (max-width: 880px) {
+    body {
+        background: url("./lines_vertical.svg") no-repeat;
+        background-clip: border-box;
+        background-size: auto auto;
+    }
+
+    .name_container {
+        width: 100%;
+    }
+
+    .socials_container {
+        width: 100%;
+    }
+
+    .info_container {
+        width: 100%;
+    }
+
+    p {
+        margin-left: 0.4em;
+    }
+
+    a {
+        text-decoration: underline;
+        text-decoration-color: aqua;
+    }
 }
 
-@media (max-width: 450px){
-html{ font-size: 30px;
-line-height: 30px;
-}
-p{
-margin-left: 0.4em;
-margin-right: 0.4em;
-}
+@media (max-width: 450px) {
+    html {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    p {
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+    }
 }
