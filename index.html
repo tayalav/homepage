@@ -6,36 +6,67 @@
     <title>Taya Lavrinenko, cartography designer</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="taya_styles.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700,400i|IBM+Plex+Sans:400,700,400i" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    var isMobile = false;
+    $(document).ready( function() {
+    if ($('body').width() <= 450) {
+        isMobile = true;
+    }
+    if (!isMobile) {
+        var $win = $(window),
+        w = 0,h = 0,
+        rgb = [],
+        getWidth = function() {
+        w = $win.width();
+        h = $win.height();
+        };
+
+        $win.resize(getWidth).mousemove(function(e) {
+        rgb = [
+        Math.round(e.pageX/w * 255),
+        Math.round(e.pageY/h * 255),
+        200
+        ];
+
+        $(document.body).css('background','rgb('+rgb.join(',')+')');
+
+        }).resize();
+    }
+    } );
+    </script>
+
 </head>
-<body>
-<div class="container">
-    <div class="name_container">
-        <p class="name_text">
-            Taya Lavrinenko
-        </p>
-        <p class="designer_text">
-            <b>cartography designer & geographer</b>
-        </p>
+<body> 
+    <div class="container">
+        <div class="name_container">
+            <p class="name_text">
+               Taya Lavrinenko
+            </p>
+            <p class="designer_text">
+                cartography designer & geographer
+            </p>
+        </div>
+        <div class="info_container">
+            <p class="info_text1">
+                I enjoy working with the <i>data</i>, <i>design</i> and <i>code</i> to keep the balance between informative
+                and clear map styles.
+            </p>
+            <p class="info_text2">
+                <br>Currently work as chief of cartography at <a class="urbica_link" href="https://urbica.co" target="_blank">Urbica</a>.
+            </p>
+        </div>
+        <div class="socials_container">
+            <p class="socials_text">
+                <a href="mailto:tayalav@gmail.com" target="_blank">mail</a>,
+                <a href="https://www.linkedin.com/in/taya-lavrinenko/" target="_blank">linkedin</a>,
+                <a href="https://twitter.com/tayalav" target="_blank">twitter</a>,
+                <a href="https://www.facebook.com/taya.chill" target="_blank">facebook</a>,
+                <a href="https://medium.com/@tayalavrinenko" target="_blank">medium</a>
+            </p>
+        </div>
     </div>
-    <div class="info_container">
-        <p class="info_text">
-            I enjoy working with the <b>data</b>, <b>design</b>, and <b>code</b> to keep the balance between informative
-            and clear map styles.
-        </p>
-        <p class="info_text">
-            Currently work as chief of cartography at <a class="urbica_link" href="https://urbica.co">Urbica</a>.
-        </p>
-    </div>
-    <div class="socials_container">
-        <p class="socials_text">
-            <a href="mailto:tayalav@gmail.com" target="_blank">Mail</a>,
-            <a href="https://www.linkedin.com/in/taya-lavrinenko/" target="_blank">linkedin</a>,
-            <a href="https://twitter.com/tayalav" target="_blank">twitter</a>,
-            <a href="https://www.facebook.com/taya.chill" target="_blank">facebook</a>,
-            <a href="https://medium.com/@tayalavrinenko" target="_blank">medium</a>
-        </p>
-    </div>
-</div>
+    <img class="imgsvg" src="./lines_vertical.svg" alt="isolines" width="100%"/> 
 </body>
 </html>
