@@ -27,7 +27,7 @@ img{
 
 }
 body {
-    background-color: rgb(137, 233, 200);
+    background-color: #857fc6;
 }
 
 .container {
@@ -126,7 +126,7 @@ p {
         width: 100%;
     }
     body{
-    background: rgb(137, 233, 200);
+    background: #857fc6;
     }
     img{
         position: absolute;
@@ -158,7 +158,7 @@ p {
     }
 
     body{
-    background: rgb(137, 233, 200);
+    background: #857fc6;
     }
 
 
